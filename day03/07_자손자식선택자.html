@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>자손자식선택자</title>
+	<style>
+	/* 
+	자손 선택자 (교재 75페이지)
+		-요소 안에 있는 선택자
+		-선택자 선택자
+	자식 선택자 (교재 76페이지)
+		-요소 바로 밑에 있는 선택자
+		-선택자>선택자
+	*/
+	.box {color: red;}
+	.container .box {color:blue;}
+	.container>.box {color:green;}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">1</div>
+		<div class="box">2</div>
+		<div class="box">3</div>
+		<div class="side">
+			<div class="box">4</div>
+		</div>
+	</div>
+	<div class="box">5</div>
+</body>
+</html>

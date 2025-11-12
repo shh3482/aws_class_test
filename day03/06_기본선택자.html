@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>기본선택자</title>
+	<style>
+		/* 
+		선택자
+		-요소를 선택하는 방법
+
+		선택자 종류
+		1.전체 선택자(교재 72페이지)
+			-모든 요소를 선택
+			-*
+			-우선순위가 가장 낮음
+			-문서의 기본 글자 크기, 기본 폰트 설정 등을 함
+		2.태그 선택자(교재 74페이지)
+			-태그명이 일치하는 요소를 선택
+			-태그명
+			-우선순위가 낮음
+		3.클래스 선택자(교재 86페이지)
+			-클래스명이 일치하는 요소를 선택
+			-클래스는 여러 클래스가 올 수 있음 => 클래스에 공백이 있을 수 있음
+			-.클래스명
+			-우선순위 10점
+		4.아이디 선택자(교재 87페이지)
+			-요소의 id 속성값이 일치하는 요소를 선택
+			-#아이디명
+			-우선순위: 100
+		*/
+		*{color: red;}
+		div {color: blue;}
+		.box1 {color: green;}
+		#first {color: yellow;}
+
+	</style>
+</head>
+<body>
+	<div class="box1 box" id="first">1</div>
+	<div class="box2 box">2</div>
+	<div class="box3 box">3</div>
+	<a href="" class="link">링크1</a>
+</body>
+</html>
